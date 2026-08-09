@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.vercel/
+
+# Local SQLite dev database (created by runAppLocally.sh).
+# Leading slash = repo root only (do NOT ignore src/lib/data/).
+/data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment / secrets — NEVER commit real credentials
+.env
+.env.local
+.env.*.local
+*.env
+# Keep committed templates
+!.env.example
+!.env.local.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
